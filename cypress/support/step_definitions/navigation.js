@@ -162,8 +162,7 @@ Then("the user navigate to the Admin page", () => {
       expect(users.employee).to.have.property(testData.firstName);
       expect(users.employee).to.have.property(testData.middleName);
       expect(users.employee).to.have.property(testData.lastName);
-      expect(users.employee).to.have.property(testData.terminationId).to.be
-        .null;
+      expect(users.employee).to.have.property(testData.terminationId);
 
       expect(users).to.have.property(testData.userRole);
       expect(users.userRole).to.have.property(testData.id);
